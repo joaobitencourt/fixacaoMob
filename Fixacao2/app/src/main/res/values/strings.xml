@@ -3,4 +3,11 @@
     <string name="butaoEmail">Enviar Email</string>
     <string name="butaoTel">Telefone</string>
     <string name="butaoEndereco">Buscar Endereço</string>
+    <string name="txtVEscolha">Escolha qual a opção desejada</string>
+    <string name="Assunto">Assunto</string>
+    <string name="Texto">Corpo do texto</string>
+    <string name="EScrevaoEmail">Destinatário</string>
+    <string name="BtnLIgar">Ligar</string>
+    <string name="BtnBuscarEnd">Bscar Endereço</string>
+    <string name="lblEnd">Digite o Endereço</string>
 </resources>
