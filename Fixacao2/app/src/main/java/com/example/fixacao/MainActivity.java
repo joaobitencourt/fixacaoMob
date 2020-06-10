@@ -28,9 +28,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void fazerligacao (View view){
-        //Intent intent = new Intent(MainActivity.this, StringActivity.class); // intent usado para abrir outra activity
-        //intent.putExtra("resultado", txtResu);
         Intent intent = new Intent(MainActivity.this, Telefone.class);
+        startActivity(intent);
+    }
+
+    public void eomapa (View view){
+        Intent intent = new Intent(MainActivity.this, Endereco.class);
         startActivity(intent);
     }
 }
