@@ -36,4 +36,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, Endereco.class);
         startActivity(intent);
     }
+
+    public void foto (View view){
+        Intent intent = new Intent(MainActivity.this, FotoActivity.class);
+        startActivity(intent);
+    }
+
 }

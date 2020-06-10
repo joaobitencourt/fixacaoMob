@@ -4,68 +4,70 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".FotoActivity">
 
     <Button
-        android:id="@+id/btnemail"
+        android:id="@+id/btnFoto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="enviaremail"
-        android:text="@string/butaoEmail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
-
-    <Button
-        android:id="@+id/btntelefone"
-        android:layout_width="131dp"
-        android:layout_height="50dp"
-        android:onClick="fazerligacao"
-        android:text="@string/butaoTel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
-
-    <Button
-        android:id="@+id/btnendereco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="eomapa"
-        android:text="@string/butaoEndereco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
-
-    <TextView
-        android:id="@+id/txtVEscolha"
-        android:layout_width="395dp"
-        android:layout_height="56dp"
-        android:text="@string/txtVEscolha"
-        android:textColor="#009688"
-        android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
-
-    <Button
-        android:id="@+id/btnIrFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="foto"
+        android:onClick="capturarImagem"
         android:text="@string/btnFoto"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
+        app:layout_constraintVertical_bias="0.103" />
+
+    <Button
+        android:id="@+id/btntirarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Imagem"
+        android:text="@string/btnTirarFoto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+    <Button
+        android:id="@+id/btnSelecGallery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="SelectGaleria"
+        android:text="@string/btnSellect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.541"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayoutFoto"
+        android:layout_width="416dp"
+        android:layout_height="355dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="355dp"
+        app:layout_constraintBottom_toBottomOf="@+id/LinearLayoutFoto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:srcCompat="@tools:sample/avatars" />
 </androidx.constraintlayout.widget.ConstraintLayout>

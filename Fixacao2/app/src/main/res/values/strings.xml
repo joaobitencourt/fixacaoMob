@@ -10,4 +10,7 @@
     <string name="BtnLIgar">Ligar</string>
     <string name="BtnBuscarEnd">Bscar Endereço</string>
     <string name="lblEnd">Digite o Endereço</string>
+    <string name="btnFoto">Foto</string>
+    <string name="btnTirarFoto">Tire uma Foto</string>
+    <string name="btnSellect">Selecione um Foto</string>
 </resources>
