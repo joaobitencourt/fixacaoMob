@@ -13,4 +13,5 @@
     <string name="btnFoto">Foto</string>
     <string name="btnTirarFoto">Tire uma Foto</string>
     <string name="btnSellect">Selecione um Foto</string>
+    <string name="pTtelDig">Telefone</string>
 </resources>

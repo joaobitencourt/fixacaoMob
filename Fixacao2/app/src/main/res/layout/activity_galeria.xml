@@ -2,45 +2,39 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn "
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/BackGroundMain"
-    tools:context=".FotoActivity">
+    tools:context=".GaleriaActivity">
 
     <LinearLayout
-        android:id="@+id/linear"
-        android:layout_width="390dp"
-        android:layout_height="236dp"
+        android:id="@+id/lnHoriSelect"
+        android:layout_width="336dp"
+        android:layout_height="325dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.684"></LinearLayout>
+        app:layout_constraintVertical_bias="0.916"></LinearLayout>
 
     <LinearLayout
-        android:layout_width="392dp"
-        android:layout_height="127dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linear"
+        android:layout_width="391dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/lnHoriSelect"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.473"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.183">
+        app:layout_constraintVertical_bias="0.093">
 
         <Button
-            android:id="@+id/btnFoto"
-            android:layout_width="match_parent"
-            android:layout_height="42dp"
-            android:onClick="capturarImagem"
-            android:text="@string/btnFoto" />
-
-        <Button
-            android:id="@+id/btnSelecGallery"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="galeria"
+            android:id="@+id/btnGaleria"
+            android:layout_width="384dp"
+            android:layout_height="43dp"
+            android:onClick="SelectGaleria"
             android:text="@string/btnSellect" />
     </LinearLayout>
 

@@ -4,68 +4,68 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#C0B8CD"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="enviaremail"
-        android:text="@string/butaoEmail"
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="403dp"
+        android:layout_height="200dp"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.322" />
+        app:layout_constraintVertical_bias="0.497">
 
-    <Button
-        android:id="@+id/btntelefone"
-        android:layout_width="131dp"
-        android:layout_height="50dp"
-        android:onClick="fazerligacao"
-        android:text="@string/butaoTel"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.418" />
+        <Button
+            android:id="@+id/btnemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviaremail"
+            android:text="@string/butaoEmail"
+            android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/btnendereco"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="eomapa"
-        android:text="@string/butaoEndereco"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.519" />
+        <Button
+            android:id="@+id/btntelefone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="fazerligacao"
+            android:text="@string/butaoTel"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnendereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="eomapa"
+            android:text="@string/butaoEndereco"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnIrFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="foto"
+            android:text="@string/btnFoto"
+            android:textAlignment="center" />
+
+    </LinearLayout>
 
     <TextView
         android:id="@+id/txtVEscolha"
         android:layout_width="395dp"
         android:layout_height="56dp"
+        android:background="#191818"
         android:text="@string/txtVEscolha"
+        android:textAlignment="center"
         android:textColor="#009688"
         android:textSize="28sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.076" />
 
-    <Button
-        android:id="@+id/btnIrFoto"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="foto"
-        android:text="@string/btnFoto"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
 </androidx.constraintlayout.widget.ConstraintLayout>

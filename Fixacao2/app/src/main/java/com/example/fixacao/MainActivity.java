@@ -38,8 +38,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void foto (View view){
-        Intent intent = new Intent(MainActivity.this, FotoActivity.class);
-        startActivity(intent);
+            Intent intent = new Intent(MainActivity.this, FotoActivity.class);
+            startActivity(intent);
     }
-
 }
